@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Lampu Lalu Lintas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Simulasi Lampu Lalu Lintas</h1>
+        <p id="status">Simulasi berhenti</p>
+
+        <div class="traffic-light">
+            <div class="lamp merah" id="merah"></div>
+            <div class="lamp kuning" id="kuning"></div>
+            <div class="lamp hijau" id="hijau"></div>
+        </div>
+
+        <div class="timer">
+            <span id="waktu">0</span> detik
+        </div>
+
+        <div class="buttons">
+            <button onclick="mulaiSimulasi()">Mulai</button>
+            <button onclick="berhentiSimulasi()">Berhenti</button>
+            <button onclick="resetSimulasi()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
